@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+    font-family: monospace;
+
+}
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600; 
+    font-size: 3em;
+
+}
+
+
+ul {
+    background-color:turquoise;
+    line-height: 12em;
+    font-weight: bold
+    ;
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+
+}
+
+
+.list_p {
+    background-color: firebrick;
+
+}
+
+#yellow {
+    background-color: gold;
+    
+
+}
+
+#red {
+    background-color: darkred;
+
+}
+
+
+#brown {
+    background-color: saddlebrown;
+
+}
