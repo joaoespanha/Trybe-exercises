@@ -1,0 +1,23 @@
+h1, p {
+    text-align: center ;
+}
+
+ul li, ol li {
+    list-style: none;
+
+
+
+}
+
+li:hover {
+    background-color: purple;
+
+}
+
+li:active {
+    font-family: monospace;
+    font-size: 1.5em;
+
+
+}
+
