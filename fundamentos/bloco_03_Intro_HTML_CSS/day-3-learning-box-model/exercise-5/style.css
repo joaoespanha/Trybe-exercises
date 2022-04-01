@@ -1,0 +1,48 @@
+h1, h2, h3, h4 {
+    color: red;
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+
+ol {
+    background-color: gold;
+
+}
+li {
+    font-size: 20px;
+    border: 1px solid black;
+
+}
+a {
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    font-weight: 900;
+    color: orange;
+}
+
+.even-number {
+    color: green;
+
+}
+
+.odd-number {
+    text-transform: uppercase;
+}
+
+.top-3 {
+    color: blue;
+
+
+
+}
+
+.word-java {
+    background-color: violet;
+
+
+}
