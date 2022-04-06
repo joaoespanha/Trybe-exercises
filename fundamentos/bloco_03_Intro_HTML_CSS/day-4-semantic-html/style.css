@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    border: red solid 1px;
+}
+
+
+header {
+    display: block;
+    width: 100%;
+    min-height: 100px ;
+    background-color: #03045E;
+    color: white;
+}
+
+.nav-menu {
+    display: inline-block;
+
+
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 2em;
+    padding-top: 2.5em;
+
+}
+
+.main-content-container {
+    width: 85%;
+    min-height: 500px;
+    
+}
+
+ .first-article {
+    display: inline-block;
+    height: 200px;
+    width: 50%;
+    position: absolute;
+    
+}
+
+.second-article {
+    display: inline-block;
+    margin-left: 50%;
+    height: 200px;
+    width: 50vw;
+    float: right;
+    position: absolute;
+}
