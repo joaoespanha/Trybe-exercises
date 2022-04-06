@@ -1,0 +1,28 @@
+div:hover {
+    border: 2px solid black;
+    transition: 200ms;
+}
+h3{
+    font-style: italic;
+}
+.first-color{
+    background-color: #ADDBE2;
+
+}
+
+.second-color{
+    background-color: #772448;
+}
+
+.complementary-color {
+    background-color: #7563EC;
+
+}
+
+.dark-color{
+    background-color: #0A100D;
+}
+
+.bright-color {
+    background-color: #C7EEDF;
+}
