@@ -1,76 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Preencha para concorrer a viagem!</h1>
-    </header>
-    <form action="" method="get">
-        <div class="form-line">
-            <label for="fullName"></label>Nome:
-            <input type="text" placeholder="ex:Pedro Rocha" name="fullName" id="fulName">
-        </div>
-        
-        <div class="form-line">
-            <label for="email"></label>E-mail:
-            <input type="email" name="email" id="email">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="container">
+            <h1 class="display-1">Preencha para concorrer a viagem!</h1>
+        </header>
 
-        </div>
-        <div class="form-line">
-            <label for="destiny-amsterdan"></label>Amsterdan
-            <input type="radio" name="destiny" value="amtr" id="destiny-amsterdan" class="destiny-option">
+        <form id="forms" class="container" action="" method="get">
+            <div class="container">
+                <label class="form-label" for="fullName"></label>Nome:
+                <input type="text" class="form-control" placeholder="ex:Pedro Rocha" name="fullName" id="fulName">
+            </div>
+            
+            <div class="container">
+                <label for="email"></label>E-mail:
+                <input type="email" class="form-control"  name="email" id="email">
 
-            <label for="destiny-amsterda"></label>Lisbon
-            <input type="radio" name="destiny" value="lisb" id="destiny-lisbon" class="destiny-option">
+            </div>
 
-            <label for="destiny-amsterda"></label>Madrid
-            <input type="radio" name="destiny" value="madr" id="destiny-madrid" class="destiny-option">
+            <div class="container">
+                <div class="form-check">
+                    <label class="form-check-label" for="destiny-amsterdan"></label>Amsterdan
+                    <input class="form-check-input" type="radio" class="form-checkbox-input" name="destiny" value="amtr" id="destiny-amsterdan" class="destiny-option">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="destiny-amsterda"></label>Lisbon
+                    <input class="form-check-input" type="radio" name="destiny" value="lisb" class="form-checkbox" id="destiny-lisbon" class="destiny-option">   
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="destiny-amsterda"></label>Madrid
+                    <input class="form-check-input" type="radio" name="destiny" value="madr" id="destiny-madrid" class="destiny-option">
+                </div>
+                
+                <div class="form-check"> 
+                    <label class="form-check-label" for="destiny-amsterda"></label>Muniche
+                    <input class="form-check-input" type="radio" name="destiny" value="mun" id="destiny-muniche" class="destiny-option">
+                </div>
 
-            <label for="destiny-amsterda"></label>Muniche
-            <input type="radio" name="destiny" value="mun" id="destiny-muniche" class="destiny-option">
+            </div>
 
-        </div>
+            <div class="container">
+                <p class="lead">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea placeholder="Descreva sua palestra em 800 caracteres" name="why" maxlength="500" id="whyYou" cols="30" rows="10"></textarea>
 
-        <div class="form-line">
-            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-            <textarea name="why" maxlength="500" id="whyYou" cols="30" rows="10"></textarea>
-
-        </div>
-        <div class="form-line">
-            <label for="trip-Date">Qual a melhor data para realizar sua viagem?</label>
-            <br>
-            <input type="date" name="tripDate" id="trip-Date">
-
-
-
-        </div>
-        <div class="form-line">
-            <label for="want-more"></label>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-            <input type="checkbox" name="wantMore" id="want-more">
-
-
-        </div>
-        <div class="form-line">
-            <label for="permition"></label>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-            <input type="checkbox" name="permition" id="permition">
+            </div>
+            <div class="container">
+                <label for="trip-Date">Qual a melhor data para realizar sua viagem?</label>
+                <br>
+                <input type="date" name="tripDate" id="trip-Date">
 
 
-        </div>
-        <div class="formline">
-            <button type="submit" id="submit-button">Enviar</button>
+
+            </div>
+            <div class="container">
+                <label for="want-more"></label>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input type="checkbox" name="wantMore" id="want-more">
 
 
-        </div>
+            </div>
+            <div class="container">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="permition" id="permition">
+                    <label class="form-check-label" for="permition"></label>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                    
+                </div>
+                
 
-    </form>
+
+            </div>
+            <div class="container">
+                <button class="btn btn-success" type="submit" id="submit-button">Enviar</button>
 
 
-    <script src="script.js"></script>
-</body>
+            </div>
+
+        </form>
+
+
+        <script src="script.js"></script>
+    </body>
+
 </html>
