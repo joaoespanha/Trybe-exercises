@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  front-end:
+    build: front-end/
+    restart: on-failure
+    ports:
+      - 3000:3000
+    depends_on: 
+      - back-end
+    volumes:
+      - ./logs:/var/log/frontend
+    networks:
+      - rede-virtual-1
+  back-end:
+    build: back-end/
+    restart: on-failure
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=data-base
+    depends_on:
+      - data-base
+    volumes:
+      - dados-do-banco:/data/db
+    networks:
+      - rede-virtual-1
+      - rede-virtual-2
+  data-base:
+    image: betrybe/docker-compose-example-database:v1
+    restart: on-failure
+    networks:
+      - rede-virtual-2
+
+volumes:
+  dados-do-banco:
+networks:
+  rede-virtual-1:
+  rede-virtual-2:
