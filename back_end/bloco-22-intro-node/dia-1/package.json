@@ -1,0 +1,20 @@
+{
+  "name": "bloco-22-intro-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "joao_espanha",
+  "type": "commonjs",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "node-fetch": "2.6"
+  }
+}
