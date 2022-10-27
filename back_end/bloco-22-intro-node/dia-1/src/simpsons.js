@@ -11,8 +11,6 @@ const simpsons = async () => {
     console.log(data);
 }
 
-simpsons()
-
 module.exports = { 
     simpsons 
 };
