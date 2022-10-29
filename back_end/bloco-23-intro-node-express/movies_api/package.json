@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "node .",
+    "dev": "nodemon run ."
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "eslint": "6.8",
-    "eslint-config-trybe-backend": "1.0"
+    "eslint-config-trybe-backend": "1.0",
+    "nodemon": "^2.0.20"
   }
 }

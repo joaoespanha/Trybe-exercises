@@ -47,4 +47,33 @@ app.post('/movies', async (req, res) => {
     res.status(200).json(moviesList);
 });
 
+// route update movie
+
+app.put('/movies/:id', async (req, res) => {
+    const { id } = req.params;
+    const newInfo = { ...req.body };
+    
+    // geting movies info
+    const data = await fs.readFile(dataBase, 'utf-8');
+    const moviesArry = JSON.parse(data);
+
+    const updatedMovie = {
+        id: Number(id),
+         ...newInfo,
+    };
+    // console.log('updated', updatedMovie);
+
+    moviesArry.forEach((movie, index) => {
+        if (movie.id === Number(id)) {
+        moviesArry[index] = updatedMovie;
+        }
+    });
+    
+    const arryToString = JSON.stringify(moviesArry); 
+
+    await fs.writeFile(dataBase, arryToString);
+    
+    res.status(200).end();
+});
+
 module.exports = app;
