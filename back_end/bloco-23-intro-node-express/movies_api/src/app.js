@@ -59,7 +59,7 @@ app.put('/movies/:id', async (req, res) => {
 
     const updatedMovie = {
         id: Number(id),
-         ...newInfo,
+        ...newInfo,
     };
     // console.log('updated', updatedMovie);
 
@@ -73,7 +73,7 @@ app.put('/movies/:id', async (req, res) => {
 
     await fs.writeFile(dataBase, arryToString);
     
-    res.status(200).end();
+    res.status(200).json(moviesArry);
 });
 
 module.exports = app;
