@@ -13,16 +13,17 @@ class Jedi:
     def attack_with_saber(self):
         return self.level * 100
 
+
 class AtackAdapter:
     def __init__(self, character):
         self.char = character
 
     def attack(self):
-        if isinstance(self.char, Jedi ) is True:
+        if isinstance(self.char, Jedi) is True:
             return self.char.attack_with_saber()
         return self.char.attack()
 
-        
+
 class StarWarsGame:
     def __init__(self, character_adapter):
         self.character = character_adapter
